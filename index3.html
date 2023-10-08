@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+         
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("image2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.pricing-card{
+    background-color: #ffffffc9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    max-width: 300px;
+}
+.pricing-card:hover{
+    background-color: gray;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-header h2 {
+    margin: 0;
+}
+
+.price {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.currency {
+    font-size: 0.8em;
+}
+
+.amount {
+    font-size: 1.5em;
+}
+
+.period {
+    font-size: 0.8em;
+}
+
+.features {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+</style>
+
+<body>
+    <div class="pricing-card" >
+        <div class="card-header">
+            <h2>Basic;</h2>
+        </div>
+        <div class="price">
+            <span class="currency">$</span>
+            <span class="amount">99.99</span>
+            <span class="period">/month</span>
+        </div>
+        <ul class="features">
+            <li>500 GBstorage</li>
+            <li>2 Users Allowed</li>
+            <li>Send up to 3GB</li>
+        </ul>
+        <button class="btn">Learn More</button>
+
+    </div>
+    <div class="pricing-card">
+        <div class="card-header">
+            <h2>Professional;</h2>
+        </div>
+        <div class="price">
+            <span class="currency">$</span>
+            <span class="amount">149.99</span>
+            <span class="period">/month</span>
+        </div>
+        <ul class="features">
+            <li>1TB storage</li>
+            <li>5 Users Allowed</li>
+            <li>Send up to 10GB</li>
+        </ul>
+        <button class="btn">Learn More</button>
+    </div>
+    <div class="pricing-card">
+        <div class="card-header">
+            <h2>Master;</h2>
+        </div>
+        <div class="price">
+            <span class="currency">$</span>
+            <span class="amount">299.99</span>
+            <span class="period">/month</span>
+        </div>
+        <ul class="features">
+            <li>2TB storage</li>
+            <li>10 Users Allowed</li>
+            <li>Send up to 20GB</li>
+        </ul>
+        <button class="btn">Learn More</button>
+    </div>
+</body>
+</html>
